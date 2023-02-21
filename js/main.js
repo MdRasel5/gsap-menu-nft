@@ -7,7 +7,7 @@ t1.to(".outer-content .title", 1, {
 });
 
 t1.to(
-  ".menu",
+  ".left-navbar-menus",
   .7, {
     width: "25%",
     ease: Expo.easeInOut,
@@ -15,8 +15,9 @@ t1.to(
   "-=.6"
 );
 
+// logo
 t1.staggerFrom(
-  ".menu ul li",
+  ".left-nav-logo img",
   .7, {
     y: 20,
     opacity: 0,
@@ -25,6 +26,29 @@ t1.staggerFrom(
   "-=1"
 );
 
+// menu
+t1.staggerFrom(
+  ".left-navbar-menus ul li",
+  .7, {
+    y: 20,
+    opacity: 0,
+    ease: Expo.easeInOut,
+  },
+  "-=1"
+);
+
+// copright-text
+t1.staggerFrom(
+  ".left-navbar-copyright span",
+  .5, {
+    y: 20,
+    opacity: 0,
+    ease: Expo.easeInOut,
+  },
+  "-=1"
+);
+
+// overlay
 t1.to(
   ".left-navbar-overlay",
   .7, {

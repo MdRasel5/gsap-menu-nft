@@ -3,8 +3,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: url("../images/5.jpg") no-repeat 50% 50%;
-  background-size: cover;
+  background-color: #fff;
 }
 
 .title {
@@ -36,12 +35,12 @@ body {
   cursor: pointer;
 }
 
-.nav .menu {
+.left-nav-wrapper .left-navbar-menus {
   position: absolute;
   width: 0%;
   height: 100vh;
   left: 0;
-  background: #061F1A
+  background: #061F1A;
 }
 
 .left-navbar-overlay {
@@ -55,13 +54,27 @@ body {
   cursor: pointer;
 }
 
-.bg {
+.left-nav-wrapper .left-nav-logo img{
+  list-style: none;
   position: absolute;
-  width: 100%;
-  height: 100vh;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 999;
 }
 
-.nav .menu ul {
+.left-nav-wrapper .left-navbar-copyright span{
+  list-style: none;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 999;
+}
+
+.left-nav-wrapper .left-navbar-menus ul {
   list-style: none;
   position: absolute;
   top: 36%;
@@ -76,7 +89,7 @@ body {
   color: #afafaf;
 }
 
-.nav .menu ul li {
+.left-nav-wrapper .left-navbar-menus ul li {
   color: #fff;
   font-weight: lighter;
   font-size: 30px;
@@ -90,31 +103,31 @@ body {
   transition: 0.3s;
 }
 
-.media {
+.social-links{
   position: absolute;
   top: 80%;
   left: 20%;
   transform: translate(-50%, -50%);
 }
 
-.media ul li {
+.social-links ul li {
   display: inline-block;
   margin-right: 10px;
   font-size: 18px;
 }
 
-.media ul li a {
+.social-links ul li a {
   color: #afafaf;
   text-decoration: none;
 }
 
-.nav .menu ul li:hover .tag {
+.left-nav-wrapper .left-navbar-menus ul li:hover .tag {
   color: #a66f2c;
   transition: 1s;
 }
 
 .menu-text {
-  background: linear-gradient(#5b5b5b, #5b5b5b) left no-repeat, #afafaf;
+  background: linear-gradient(#afafaf, #afafaf) left no-repeat, #fff;
   background-size: 0% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -131,15 +144,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  .images {
-    display: none;
-  }
 
-  .nav .menu {
+  .left-nav-wrapper .left-navbar-menus {
     width: 0%;
   }
 
-  .menu ul {
+  .left-navbar-menus ul {
     margin-top: 80px;
     margin-left: -20px;
   }
@@ -153,7 +163,7 @@ body {
     transform: translate(-50%, -90%);
   }
 
-  .menu li .menu-text {
+  .left-navbar-menus li .menu-text {
     font-size: 18px;
   }
 }
