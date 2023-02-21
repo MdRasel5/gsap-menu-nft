@@ -2,24 +2,44 @@ var t1 = new TimelineMax({
     paused: true
 });
 
+// t1.to(
+//     ".left-navbar",
+//     .7, {
+//         width: "25%",
+//         ease: Expo.easeInOut,
+//     },
+//     "-=.6"
+// );
+
+
 t1.to(
     ".left-navbar",
-    .7, {
-        width: "25%",
+    1.1, {
+        left: "0%",
         ease: Expo.easeInOut,
     },
     "-=.6"
 );
 
 // overlay
+// t1.to(
+//     ".left-navbar-overlay",
+//     .7, {
+//         width: "75%",
+//         ease: Expo.easeInOut,
+//         // delay: -1,
+//     },
+//     "-=.5"
+// );
+
 t1.to(
     ".left-navbar-overlay",
-    .7, {
-        width: "75%",
+    .9, {
+        left: 0,
         ease: Expo.easeInOut,
-        // delay: -1,
+        delay: .6,
     },
-    "-=.5"
+    "-=.9"
 );
 
 t1.reverse();
